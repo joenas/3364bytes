@@ -1,0 +1,26 @@
+{{!< default}}
+<header class="blog-header">
+    <img src="{{asset "img/og-image-sm.png"}}" width="30" height="55">
+    <div>
+
+        <h1 class="blog-title">{{@site.title}}</h1>
+        <h2 class="blog-subtitle">{{@site.description}}</h2>
+    </div>
+</header>
+
+<section class="articles">
+    {{#foreach posts}}
+    <article class="preview">
+        <header>
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            {{!-- <div class="post-meta">
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            </div> --}}
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}</p>
+        </section>
+    </article>
+    {{/foreach}}
+</section>
+{{pagination}}

@@ -1,0 +1,20 @@
+{
+  "name": "3364bytes",
+  "version": "1.0.0",
+  "description": "Ghost theme derived from 58 Bytes of CSS and Steam",
+  "keywords": [
+    "ghost-theme"
+  ],
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jon Neverland",
+    "email": "dev@jonnev.se",
+    "url": "https://github.com/joenas/3364bytes"
+  },
+  "config": {
+    "posts_per_page": 10
+  }
+}

@@ -1,0 +1,17 @@
+{{!< default}}
+<h3 class="posts-tagged"><span class="fa fa-fw fa-tag"></span> {{tag.name}}</h3>
+<section class="articles">
+    {{#foreach posts}}
+    <article class="preview">
+        <header>
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+                {{!-- <div class="post-meta"><time
+                        datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></div> --}}
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}</p>
+        </section>
+    </article>
+    {{/foreach}}
+</section>
+{{pagination}}

@@ -1,0 +1,11 @@
+{{!< default}}
+<article class="{{post_class}}">
+    {{#post}}
+    <section class="post-content">
+        {{> post-author}}
+        {{content}}
+    </section>
+    {{/post}}
+
+    {{!> disqus}}
+</article>
